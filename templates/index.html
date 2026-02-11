@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Port Scanner</title>
+    <style>
+        body { font-family: Arial; padding: 30px; background:#0f172a; color:#e5e7eb }
+        table { border-collapse: collapse; width: 100%; margin-top:20px }
+        th, td { border: 1px solid #334155; padding: 8px }
+        th { background:#1e293b }
+        input, button { padding:8px; margin:5px }
+        .error { color:#f87171 }
+    </style>
+</head>
+<body>
+
+<h2>Async Port Scanner Dashboard</h2>
+
+<form method="post">
+    Target: <input name="target" value="localhost">
+    Start: <input name="start" value="1">
+    End: <input name="end" value="1024">
+    <button type="submit">Scan</button>
+</form>
+
+{% if error %}
+<p class="error">{{error}}</p>
+{% endif %}
+
+{% if results %}
+<table>
+<tr><th>Port</th><th>Service</th><th>Banner</th></tr>
+{% for r in results %}
+<tr>
+<td>{{r.port}}</td>
+<td>{{r.service}}</td>
+<td>{{r.banner}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endif %}
+
+</body>
+</html>
