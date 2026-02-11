@@ -34,6 +34,11 @@ async-port-scanner/
     └── index.html        # Dashboard UI
 
 
+
+    
+Project strcuture proper Overview 👉 <img width="385" height="314" alt="image" src="https://github.com/user-attachments/assets/c1b1d385-f662-493c-92bb-b8c339b2b6f7" />
+
+
 ⚙️ Installation
 git clone https://github.com/rajshevde-01/async-port-scanner.git
 
