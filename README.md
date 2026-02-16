@@ -40,7 +40,7 @@ Project strcuture proper Overview 👉 <img width="385" height="314" alt="image"
 
 
 ⚙️ Installation
-git clone https://github.com/rajshevde-01/async-port-scanner.git
+git clone https://github.com/rajshevde-01/Async-Ultra-Fast-Port-Scanner-Web-Dashboard.git
 
 cd async-port-scanner
 pip install -r requirements.txt
